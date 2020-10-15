@@ -589,7 +589,7 @@ exports.extendNodeType = ({ type, store, cache, getNodesByType }) => {
           const nodeLocale = parent.node_locale
           const references = []
 
-          getNodesByType.get(`ContentfulEntry`).forEach(node => {
+          getNodesByType(`ContentfulEntry`).forEach(node => {
             if (
               node.node_locale === nodeLocale &&
               rawEntries.includes(node.contentful_id)
@@ -598,7 +598,7 @@ exports.extendNodeType = ({ type, store, cache, getNodesByType }) => {
             }
           })
 
-          getNodesByType.get(`ContentfulAsset`).forEach(node => {
+          getNodesByType(`ContentfulAsset`).forEach(node => {
             if (
               node.node_locale === nodeLocale &&
               rawAssets.includes(node.contentful_id)
