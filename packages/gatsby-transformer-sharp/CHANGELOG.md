@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.18](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.17...gatsby-transformer-sharp@2.5.18) (2020-10-16)
+
+### Performance Improvements
+
+- **gatsby:** test sync before calling onCreateNode ([#27442](https://github.com/gatsbyjs/gatsby/issues/27442)) ([6400383](https://github.com/gatsbyjs/gatsby/commit/6400383287db9967a7124df7fb0d096408372b95))
+
+## [2.5.17](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.16...gatsby-transformer-sharp@2.5.17) (2020-10-06)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
+## [2.5.16](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.15...gatsby-transformer-sharp@2.5.16) (2020-09-28)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
+## [2.5.15](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.14...gatsby-transformer-sharp@2.5.15) (2020-09-15)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
+## [2.5.14](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.13...gatsby-transformer-sharp@2.5.14) (2020-08-31)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
+## [2.5.13](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.12...gatsby-transformer-sharp@2.5.13) (2020-08-11)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
+## [2.5.12](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.11...gatsby-transformer-sharp@2.5.12) (2020-07-30)
+
+**Note:** Version bump only for package gatsby-transformer-sharp
+
 ## [2.5.11](https://github.com/gatsbyjs/gatsby/compare/gatsby-transformer-sharp@2.5.10...gatsby-transformer-sharp@2.5.11) (2020-07-09)
 
 **Note:** Version bump only for package gatsby-transformer-sharp

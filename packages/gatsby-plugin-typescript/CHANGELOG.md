@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.22](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.21...gatsby-plugin-typescript@2.4.22) (2020-10-15)
+
+### Features
+
+- **gatsby-plugin-typescript:** Add schema ([#27361](https://github.com/gatsbyjs/gatsby/issues/27361)) ([072ef6c](https://github.com/gatsbyjs/gatsby/commit/072ef6c992168c89505143670013d5d8147f4ab4))
+
+## [2.4.21](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.20...gatsby-plugin-typescript@2.4.21) (2020-09-28)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.20](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.19...gatsby-plugin-typescript@2.4.20) (2020-09-15)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.19](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.18...gatsby-plugin-typescript@2.4.19) (2020-09-08)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.18](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.17...gatsby-plugin-typescript@2.4.18) (2020-08-10)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.17](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.16...gatsby-plugin-typescript@2.4.17) (2020-08-06)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.16](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.15...gatsby-plugin-typescript@2.4.16) (2020-07-20)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
+## [2.4.15](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.14...gatsby-plugin-typescript@2.4.15) (2020-07-15)
+
+**Note:** Version bump only for package gatsby-plugin-typescript
+
 ## [2.4.14](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-typescript@2.4.13...gatsby-plugin-typescript@2.4.14) (2020-07-09)
 
 **Note:** Version bump only for package gatsby-plugin-typescript

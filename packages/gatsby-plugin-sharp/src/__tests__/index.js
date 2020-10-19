@@ -23,13 +23,20 @@ fs.existsSync = jest.fn().mockReturnValue(false)
 
 const {
   base64,
+  generateBase64,
   fluid,
   fixed,
   queueImageResizing,
   getImageSize,
+  getImageSizeAsync,
   stats,
   setBoundActionCreators,
 } = require(`../`)
+
+const {
+  getPluginOptionsDefaults,
+  setPluginOptions,
+} = require(`../plugin-options`)
 
 jest.mock(`gatsby-cli/lib/reporter`, () => {
   return {
@@ -508,6 +515,95 @@ describe(`gatsby-plugin-sharp`, () => {
       expect(result).toEqual(result2)
       expect(result).not.toEqual(result3)
     })
+
+    // Matches base64 string in snapshot, converts to jpg to force use of bg
+    // Testing pixel colour for a match would be better
+    it(`should support option: 'background'`, async () => {
+      const result = await generateBase64({
+        file: getFileObject(path.join(__dirname, `images/alphatest.png`)),
+        args: {
+          background: `#ff0000`,
+          toFormatBase64: `jpg`,
+        },
+      })
+
+      expect(result).toMatchSnapshot()
+    })
+
+    describe(`should support option: 'base64Width'`, () => {
+      // Uses 'generateBase64()` directly to avoid `base64()` caching affecting results.
+      it(`should support a configurable width`, async () => {
+        const result = await generateBase64({
+          file,
+          args: { base64Width: 42 },
+        })
+
+        expect(result.width).toEqual(42)
+      })
+
+      it(`should support a configurable default width`, async () => {
+        setPluginOptions({ base64Width: 32 })
+
+        const result = await generateBase64({
+          file,
+          args,
+        })
+
+        expect(result.width).toEqual(32)
+        setPluginOptions(getPluginOptionsDefaults())
+      })
+
+      it(`width via arg overrides global default`, async () => {
+        setPluginOptions({ base64Width: 32 })
+
+        const result = await generateBase64({
+          file,
+          args: { base64Width: 42 },
+        })
+
+        expect(result.width).toEqual(42)
+        setPluginOptions(getPluginOptionsDefaults())
+      })
+    })
+
+    describe(`should support options: 'toFormatBase64' and 'forceBase64Format'`, () => {
+      it(`should support a different image format for base64`, async () => {
+        const result = await generateBase64({
+          file,
+          args: { toFormatBase64: `webp` },
+        })
+
+        expect(result.src).toEqual(
+          expect.stringMatching(/^data:image\/webp;base64/)
+        )
+      })
+
+      it(`should support a configurable default base64 image format`, async () => {
+        setPluginOptions({ forceBase64Format: `webp` })
+        const result = await generateBase64({
+          file,
+          args,
+        })
+
+        expect(result.src).toEqual(
+          expect.stringMatching(/^data:image\/webp;base64/)
+        )
+        setPluginOptions(getPluginOptionsDefaults())
+      })
+
+      it(`image format via arg overrides global default`, async () => {
+        setPluginOptions({ forceBase64Format: `png` })
+        const result = await generateBase64({
+          file,
+          args: { toFormatBase64: `webp` },
+        })
+
+        expect(result.src).toEqual(
+          expect.stringMatching(/^data:image\/webp;base64/)
+        )
+        setPluginOptions(getPluginOptionsDefaults())
+      })
+    })
   })
 
   describe(`image quirks`, () => {
@@ -518,6 +614,23 @@ describe(`gatsby-plugin-sharp`, () => {
       )
 
       expect(result).toMatchSnapshot()
+    })
+
+    it(`handles padding bytes correctly in async version`, async () => {
+      const result = await getImageSizeAsync(
+        getFileObject(path.join(__dirname, `images/padding-bytes.jpg`))
+      )
+
+      expect(result).toMatchInlineSnapshot(`
+        Object {
+          "hUnits": "px",
+          "height": 1000,
+          "mime": "image/jpeg",
+          "type": "jpg",
+          "wUnits": "px",
+          "width": 746,
+        }
+      `)
     })
   })
 

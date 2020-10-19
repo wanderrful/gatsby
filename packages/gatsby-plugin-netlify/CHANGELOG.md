@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.21](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.20...gatsby-plugin-netlify@2.3.21) (2020-10-19)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.20](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.19...gatsby-plugin-netlify@2.3.20) (2020-10-16)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.19](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.18...gatsby-plugin-netlify@2.3.19) (2020-10-15)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.18](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.17...gatsby-plugin-netlify@2.3.18) (2020-10-14)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.17](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.16...gatsby-plugin-netlify@2.3.17) (2020-10-06)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.16](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.15...gatsby-plugin-netlify@2.3.16) (2020-09-28)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.15](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.14...gatsby-plugin-netlify@2.3.15) (2020-09-15)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.14](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.13...gatsby-plugin-netlify@2.3.14) (2020-09-07)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.13](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.12...gatsby-plugin-netlify@2.3.13) (2020-08-10)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
+## [2.3.12](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.11...gatsby-plugin-netlify@2.3.12) (2020-08-06)
+
+**Note:** Version bump only for package gatsby-plugin-netlify
+
 ## [2.3.11](https://github.com/gatsbyjs/gatsby/compare/gatsby-plugin-netlify@2.3.10...gatsby-plugin-netlify@2.3.11) (2020-07-09)
 
 **Note:** Version bump only for package gatsby-plugin-netlify

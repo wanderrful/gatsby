@@ -12,10 +12,12 @@ stores via the [Shopify Storefront API][shopify-storefront-api].
 ## Install
 
 ```shell
-npm install --save gatsby-source-shopify
+npm install gatsby-source-shopify
 ```
 
 ## How to use
+
+[See the Shopify tutorial on gatsbyjs.com for a full getting started guide](https://www.gatsbyjs.com/docs/building-an-ecommerce-site-with-shopify/)
 
 Ensure you have an access token for the [Shopify Storefront API][shopify-storefront-api]. The token should have the following permissions:
 
@@ -148,6 +150,7 @@ The following data types are available:
 | **ProductOption**  | Custom product property names.                                                                                        |
 | **ProductVariant** | Represents a different version of a product, such as differing sizes or differing colors.                             |
 | **ShopPolicy**     | Policy that a merchant has configured for their store, such as their refund or privacy policy.                        |
+| **ShopDetails**    | Name, description and money format that a merchant has configured for their store.                                    |
 
 For each data type listed above, `shopify${typeName}` and
 `allShopify${typeName}` is made available. Nodes that are closely related, such
@@ -385,6 +388,20 @@ Shopify merchants can create pages to hold static HTML content.
         bodySummary
       }
     }
+  }
+}
+```
+
+### Query shop details
+
+Shopify merchants can give their shop a name, description and a money format.
+
+```graphql
+{
+  shopifyShop {
+    name
+    description
+    moneyFormat
   }
 }
 ```
